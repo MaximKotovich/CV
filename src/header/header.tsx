@@ -1,13 +1,14 @@
 import React from 'react'
 import style from './header.module.scss'
+import { HeaderValuesEnum } from '../common/enums/header-values.enum'
 export const Header = () => {
-  const listForHeader = ['Home', 'About', 'Skills', 'Experiences', 'Contacts']
   return (
         <div className={style.header}>
             <div className={style.headerContainer}>
                 <div className={style.logo}>CV</div>
                 <ul>
-                    {listForHeader.map((item, index) => <li key={index}>{item}</li>)}
+                    {Object.values(HeaderValuesEnum).map((item, index) =>
+                        <li key={index}><a href={`#${item}`}>{item}</a></li>)}
                 </ul>
             </div>
         </div>

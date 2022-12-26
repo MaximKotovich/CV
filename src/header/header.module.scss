@@ -1,10 +1,12 @@
-@import "../../common/styles/common-colors.scss";
+@import "../common/styles/common-colors.scss";
 
 .header{
+  z-index: 2;
   width: 100%;
   display: flex;
   align-items: center;
   position: fixed;
+  background-color: $background;
 
   .headerContainer{
     padding: 0 10px;
@@ -26,13 +28,13 @@
       display: flex;
       list-style-type: none;
 
-      li{
+      li, a{
         cursor: pointer;
         padding: 20px 10px;
         transition: color 0.3s;
 
         &:hover{
-          color: $test-hover;
+          color: $text-hover;
           transition: color 0.3s;
         }
       }

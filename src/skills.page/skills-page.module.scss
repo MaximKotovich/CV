@@ -1,0 +1,50 @@
+@import "../common/styles/common-colors";
+
+
+.skillsPageContainer{
+  padding: 20px;
+
+  h1{
+    margin: 10px 0 20px 0;
+    font-size: 48px;
+  }
+
+  .skillContent{
+    display: flex;
+    .skillList {
+      flex: 1;
+      font-weight: 600;
+
+      h2{
+        margin-bottom: 25px;
+      }
+
+      .listItem{
+        padding: 10px;
+
+        .listItemTitle{
+          display: flex;
+          flex-direction: row;
+          padding: 0;
+          .name{
+            flex: 1;
+          }
+        }
+
+        .linearProgress{
+          padding: 10px 0 0 0;
+          .root{
+            border-radius: 20px;
+            background-color: rgba(32, 37, 37, 0.72);
+            padding: 2px;
+          }
+          .barColor{
+            background-color: $text-hover;
+          }
+        }
+      }
+    }
+  }
+
+}
+

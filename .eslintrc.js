@@ -18,6 +18,8 @@ module.exports = {
   ],
   rules: {
     'react/prop-types': 0,
-    'no-use-before-define': 'off'
+    'no-use-before-define': 'off',
+    'react/display-name': 'off',
+    'no-unused-vars': 'off'
   }
 }

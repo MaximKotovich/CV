@@ -1,0 +1,41 @@
+@import "../common/styles/common-colors";
+
+
+.experienceContainer{
+  padding: 20px;
+  h1{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 65px;
+  }
+
+  .experienceContent{
+    display: flex;
+    .experienceBlock {
+      flex: 1;
+      padding: 10px;
+
+      h2{
+        margin: 40px 0;
+      }
+
+      .experienceItem{
+        margin: 0 0 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 145px;
+        padding: 40px;
+        box-shadow: 0 4px 18px 3px rgb(0 0 0 / 15%);
+
+        h4{
+          margin: 0 0 30px 0;
+          span{
+            color: $text-hover;
+          }
+        }
+      }
+    }
+
+  }
+}

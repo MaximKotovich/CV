@@ -1,0 +1,22 @@
+@import "../styles/common-colors";
+
+.progressBar{
+  width: 100%;
+  position: relative;
+  background-color: rgba(32, 37, 37, 0.72);
+  height: 8px;
+  border-radius: 20px;
+  overflow: hidden;
+
+  .progress{
+    border-radius: 20px;
+    transform: translateX(-15%);
+    position: absolute;
+    background-color: $text-hover;
+    height: 8px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+}
