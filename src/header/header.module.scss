@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   position: fixed;
+  background-color: $background;
 
   .headerContainer{
     padding: 0 10px;
@@ -32,7 +33,7 @@
         transition: color 0.3s;
 
         &:hover{
-          color: $test-hover;
+          color: $text-hover;
           transition: color 0.3s;
         }
       }

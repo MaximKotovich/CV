@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './header.module.scss'
 export const Header = () => {
-  const listForHeader = ['Home', 'About', 'Skills', 'Experiences', 'Contacts']
+  const listForHeader = ['About', 'Skills', 'Experiences', 'Contacts']
   return (
         <div className={style.header}>
             <div className={style.headerContainer}>
